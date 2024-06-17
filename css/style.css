@@ -1,0 +1,368 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;    
+}
+.barra-principal{
+    background-color: #f1540b;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.menu-ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.menu-nav li{
+    list-style: none;
+    margin: 20px;
+}
+.menu-ul li a{
+    text-decoration: none;
+}
+
+.grid-container{
+    display: grid;
+    row-gap: 50px;
+    justify-content:center;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+   "primero   segundo  tercero  cuarto"
+   "quinto    quinto   sexto    septimo";
+}
+.grid-container2{
+    display: grid;
+    row-gap: 10px;
+    justify-content:center;
+    align-items: center;
+    vertical-align: middle;
+    background-color:aliceblue;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+        "foto cuidados"
+        "foto rostro"
+        "foto maquillaje"
+        "foto cabello"
+        "foto infantil"
+        "frase frase"
+        "lema lema";
+}     
+.grid-container3{
+    display: grid;
+    row-gap: 50px;
+    justify-content:center;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+   "origen      origen"
+   "innovacion  informe"
+   "lema3       lema3";
+}
+.grid-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    flex-direction: column; 
+}
+.grid-item2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    flex-direction: column; 
+}
+.grid-item3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    flex-direction: column; 
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.primero{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-area: primero;
+}
+.segundo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    grid-area: segundo;
+}
+.tercero{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    grid-area: tercero;
+}
+.cuarto{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    grid-area: cuarto;
+}
+.quinto{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    grid-area: quinto; 
+}  
+.sexto{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+    grid-area: sexto; 
+}
+.septimo{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    grid-area: septimo;
+}
+.video{
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+    max-height: 450px;
+}
+.expand-button{
+    width: 50%;
+    height: auto; 
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.foto{
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    width: 600px;
+    height: 500px;
+    grid-area: foto;
+}
+.cuidados{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    grid-area: cuidados;
+}
+.rostro{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    grid-area: rostro;
+}
+.maquillaje{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    grid-area: maquillaje;
+}
+.cabello{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    grid-area: cabello;
+}
+.infantil{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    grid-area: infantil;
+}
+.frase{
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    grid-area: frase;
+    color:#4d15e9;
+    font-size: 30px;
+    border-style: groove;
+    border-color: #000000;
+}
+.lema{
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+    grid-area: lema;
+    color: #ff5100;
+    font-style: italic;
+    font-size:x-large;
+}
+.origen{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    grid-area: origen;
+    color:#f1540b;
+    font-size: 20px;
+}
+.innovacion{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-area: innovacion;
+    color: green;
+    font-size: 20px;
+}
+.informe{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    grid-area: informe;
+    color:darkblue;
+    font-size: 20px;
+}
+.lema3{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    grid-area: lema3;
+    color: #ff5100;
+    font-style: italic;
+    font-size:x-large;
+}
+
+h1{
+    justify-content: start;
+}
+h2{
+    text-align: center;
+}
+.titulo1{
+    text-align: center;
+    color: #4d15e9;   
+}
+.titulo2{
+    color: #000000;
+    background-color: aliceblue;
+}
+.titulo2 p{
+    color: #f06311;
+    background-color: #f0f5f5;
+}
+.titulo3 {
+    color: #f05011;
+    background-color: #f0f5f5;
+}
+.tama1{
+    width: 60px;
+    height: 60px;
+}
+.tama2{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 400px;
+}
+.tama2:hover{
+    transform: scale(1.1);
+}
+.descri1{
+    color: #330470;
+}
+.parrafo1{
+    font-size: 40px;
+}
+.parrafo2{
+    font-size: 30px;
+}
+.descri2{
+    color: #11d6f0;
+}
+.color-boton{
+    color: white;
+    background-color: #ff5100;   
+    border-color: #ff5100;
+}
+.max-height-line{
+    max-height: 50px;
+    overflow: hidden;
+    background-color: lightblue;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "primero segundo"
+            "tercero cuarto"
+            "quinto quinto"
+            "sexto septimo";
+    }
+    .video {
+        width: 100%;
+        height: auto;
+    }
+    .grid-container2 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto "
+            "cuidados"
+            "rostro"
+            "maquillaje"
+            "cabello"
+            "infantil"
+            "frase"
+            "lema";
+    }
+    .grid-container3 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "origen"
+            "innovacion"
+            "informe"                 
+            "lema3";
+    }
+    /*.navbar-nav {
+        text-align: center; 
+      }
+
+      .navbar-nav li {
+        display: block; 
+        margin: 0;
+      }*/
+}
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "primero"
+            "segundo"
+            "tercero"
+            "cuarto"
+            "quinto"
+            "sexto"
+            "septimo";
+    }
+    .video {
+        width: 100%;
+        height: auto;
+    }
+    .grid-container2 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto "
+            "cuidados"
+            "rostro"
+            "maquillaje"
+            "cabello"
+            "infantil"
+            "frase"
+            "lema";
+    }
+    .grid-container3 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "origen"
+            "innovacion"
+            "informe"                 
+            "lema3";
+    }
+}
